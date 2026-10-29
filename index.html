@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Evolve Manutenção Industrial</title>
+<meta name="description" content="Manutenção mecânica, elétrica e civil, pintura, coberturas e reformas para indústrias, hospitais, supermercados e comércios em Sorocaba e região. Equipe própria com EPI completo, NR-01, NR-06 e NR-18.">
+<meta property="og:title" content="Evolve Manutenção Industrial">
+<meta property="og:description" content="Onde a operação não pode falhar, a Evolve entra.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a1c2e">
+<link rel="icon" href="emblema.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Evolve Manutenção Industrial Ltda.","telephone":"+55 15 99770-6955","email":"comercial@evolveservicos.com.br","address":{"@type":"PostalAddress","addressLocality":"Sorocaba","addressRegion":"SP","addressCountry":"BR"},"areaServed":"Sorocaba e região","description":"Manutenção mecânica, elétrica e civil, pintura, coberturas e reformas para indústrias, hospitais, supermercados e comércios.","sameAs":["https://www.linkedin.com/in/evolve-manutencao-industrial/"]}
+</script>
+<style>
+:root{
+  --bg:#07131f; --bg2:#0a1c2e; --bg3:#12304d; --card:#0e2438; --line:#1f4468;
+  --fg:#e9eef3; --mut:#a9bccd; --g:#23b876; --g2:#17a267; --gd:#0f6e45; --ink:#04101a;
+  --disp:"Oswald","Arial Narrow",Arial,sans-serif; --body:"Public Sans",system-ui,Arial,sans-serif;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.7 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+.w>*,.w>div>*{min-width:0}
+a{color:inherit}
+.w{max-width:1200px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{font:700 13px var(--body);letter-spacing:.24em;text-transform:uppercase;color:var(--g);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:3px;background:var(--g)}
+h1,h2,h3{font-family:var(--disp);text-transform:uppercase;margin:0;text-wrap:balance;letter-spacing:.02em;overflow-wrap:anywhere}
+h2{font-size:clamp(30px,4.6vw,54px);line-height:1.18;font-weight:700;margin-top:14px}
+.lead{color:var(--mut);max-width:62ch;font-size:18px;line-height:1.7;margin:20px 0 0}
+section{padding-block:clamp(64px,9vw,120px);position:relative}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;font:700 16px var(--body);text-decoration:none;border-radius:999px;border:2px solid var(--g);background:var(--g);color:var(--ink);cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px -8px rgba(35,184,118,.6)}
+.btn.o{background:transparent;color:var(--fg);border-color:#3b6288}
+.btn.o:hover{border-color:var(--g);box-shadow:none}
+.btn:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #fff;outline-offset:3px}
+
+/* NAV */
+nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,backdrop-filter .3s,border-color .3s;border-bottom:1px solid transparent;padding-top:env(safe-area-inset-top,0px)}
+nav.s{background:rgba(7,19,31,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+nav img.logo{height:40px;width:auto}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav ul a{white-space:nowrap;text-decoration:none;font:600 13px var(--body);letter-spacing:.05em;text-transform:uppercase;color:var(--mut);transition:color .2s}
+nav ul a:hover{color:var(--g)}
+nav .btn{padding:11px 20px;font-size:14px}
+.burger{display:none;background:none;border:0;color:var(--fg);width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:26px;height:3px;background:currentColor;margin:5px auto;transition:.25s}
+@media(max-width:1260px){
+  nav ul{position:fixed;inset:74px 0 auto 0;background:rgba(7,19,31,.98);flex-direction:column;gap:0;padding:12px 20px 24px;transform:translateY(-120%);transition:transform .3s;border-bottom:1px solid var(--line)}
+  nav ul.open{transform:none}
+  nav ul a{display:block;padding:16px 0;font-size:16px;border-bottom:1px solid var(--line)}
+  nav .btn.d{display:none}
+  .burger{display:block}
+}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding-block:130px 90px;background:linear-gradient(180deg,rgba(7,19,31,.55),rgba(7,19,31,.92)),linear-gradient(90deg,rgba(7,19,31,.95) 8%,rgba(7,19,31,.45) 70%),url(pta.jpg) center/cover;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:6px;background:linear-gradient(90deg,var(--g),transparent)}
+.hero .w{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,5vw,72px);align-items:center;width:100%}
+.hero h1{font-size:clamp(36px,7vw,92px);line-height:1.14;font-weight:700;margin:26px 0 30px;letter-spacing:.02em}
+.hero h1 em{font-style:normal;color:var(--g);display:block}
+.hero p{font-size:clamp(17px,2vw,21px);color:#c7d5e1;max-width:54ch;margin:0 0 34px}
+.hero .btns{display:flex;flex-wrap:wrap;gap:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:38px}
+.chips span{font:600 13px var(--body);letter-spacing:.06em;text-transform:uppercase;padding:9px 14px;border:1px solid #2c5278;border-radius:999px;background:rgba(14,36,56,.6);color:#cfe0ee}
+.chips span::before{content:"✓";color:var(--g);margin-right:8px;font-weight:700}
+.stack{position:relative;height:min(64vh,580px)}
+.stack figure{position:absolute;margin:0;border-radius:var(--r);overflow:hidden;border:1px solid #2c5278;box-shadow:0 30px 60px -20px rgba(0,0,0,.7)}
+.stack img{width:100%;height:100%;object-fit:cover}
+.stack .a{inset:0 28% 14% 0;animation:fl 7s ease-in-out infinite}
+.stack .b{inset:26% 0 0 38%;animation:fl 8s ease-in-out -3s infinite;border-color:var(--g)}
+.stack .tag{position:absolute;left:-10px;bottom:6%;z-index:3;background:var(--g);color:var(--ink);font:700 13px var(--body);letter-spacing:.1em;text-transform:uppercase;padding:10px 16px;border-radius:8px}
+@keyframes fl{50%{transform:translateY(-12px)}}
+@media(max-width:900px){.hero .w{grid-template-columns:1fr}.stack{display:none}.hero{padding-top:120px}}
+.scroll{position:absolute;left:50%;bottom:22px;translate:-50% 0;width:26px;height:42px;border:2px solid #4a7399;border-radius:14px;opacity:.7}
+.scroll::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;background:var(--g);border-radius:2px;animation:sc 1.6s infinite}
+@keyframes sc{60%{transform:translateY(14px);opacity:0}}
+@media(max-width:900px){.scroll{display:none}}
+
+/* TRUST MARQUEE */
+.mq{background:var(--g);color:var(--ink);overflow:hidden;padding-block:16px;border-block:1px solid var(--gd)}
+.mq div{display:flex;gap:56px;width:max-content;animation:mq 34s linear infinite;font:600 20px var(--disp);text-transform:uppercase;letter-spacing:.06em}
+.mq span::after{content:"◆";margin-left:56px;font-size:11px;vertical-align:middle}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* NUMBERS */
+.nums{background:var(--bg2);padding-block:56px}
+.nums .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:36px 32px}
+.nums .w>div{border-left:4px solid var(--g);padding:4px 0 4px 20px}
+.nums b{display:block;font:700 clamp(44px,5.4vw,66px)/1.15 var(--disp);color:#fff;margin-bottom:10px;letter-spacing:.02em}
+.nums b i{font-style:normal;color:var(--g)}
+.nums span{display:block;color:var(--mut);font-size:15px;line-height:1.55}
+
+/* SERVICES */
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin:40px 0 28px}
+.tab{font:600 14px var(--body);letter-spacing:.06em;text-transform:uppercase;padding:13px 20px;border-radius:999px;border:1px solid #2c5278;background:transparent;color:var(--mut);cursor:pointer;transition:.2s}
+.tab:hover{color:#fff;border-color:var(--g)}
+.tab[aria-selected=true]{background:var(--g);color:var(--ink);border-color:var(--g)}
+.pane{display:none;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,4vw,56px);align-items:center;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.pane.on{display:grid;animation:in .5s}
+@keyframes in{from{opacity:0;transform:translateY(14px)}}
+.pane .ph{height:100%;min-height:440px;max-height:560px}
+.pane .ph img{width:100%;height:100%;object-fit:cover}
+.pane .tx{padding:clamp(24px,4vw,52px) clamp(24px,4vw,52px) clamp(24px,4vw,52px) 0}
+.pane h3{font-size:clamp(28px,3.6vw,42px);line-height:1.18}
+.pane p{color:var(--mut);margin:14px 0 22px}
+.pane ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.pane li{display:flex;gap:14px;align-items:flex-start;font-weight:500}
+.pane li::before{content:"";flex:none;width:22px;height:22px;margin-top:3px;border-radius:50%;background:var(--g) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%2304101a' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+@media(max-width:860px){.pane.on{grid-template-columns:1fr}.pane .ph{min-height:300px;max-height:380px}.pane .tx{padding:4px 24px 28px}}
+
+/* CASE TIMELINE */
+.case{background:var(--bg2)}
+.case .hd{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:end}
+.rail{display:flex;gap:18px;overflow-x:auto;padding:36px 20px 18px;margin-inline:calc(50% - 50vw);padding-inline:max(20px,calc(50vw - 600px));scroll-snap-type:x mandatory;scroll-padding-inline:max(20px,calc(50vw - 600px));scrollbar-width:thin;scrollbar-color:var(--g) var(--bg3)}
+.step{flex:0 0 min(78vw,320px);scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.step .im{aspect-ratio:3/4;overflow:hidden}
+.step img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.step:hover img{transform:scale(1.06)}
+.step div.t{padding:18px 20px 22px}
+.step i{font:700 40px/1 var(--disp);color:var(--g);font-style:normal}
+.step b{display:block;font:600 22px var(--disp);text-transform:uppercase;margin:4px 0 4px}
+.step span{color:var(--mut);font-size:15px;display:block}
+
+/* SAFETY */
+.safe .w{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);align-items:center}
+.safe .ph{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/5}
+.safe .ph img{width:100%;height:100%;object-fit:cover}
+.nrs{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin:30px 0 24px}
+.nr{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--g);border-radius:12px;padding:18px}
+.nr b{display:block;font:700 34px/1 var(--disp);color:var(--g)}
+.nr span{font-size:14px;color:var(--mut);display:block;margin-top:6px}
+.safe ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;color:#c7d5e1}
+.safe li::before{content:"▸";color:var(--g);margin-right:10px}
+@media(max-width:860px){.safe .w{grid-template-columns:1fr}.safe .ph{aspect-ratio:4/3;order:-1}}
+
+/* PROCESS */
+.proc{background:var(--bg2)}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:48px;counter-reset:s;position:relative}
+.flow li{list-style:none;position:relative;padding-top:64px}
+.flow li::before{counter-increment:s;content:counter(s,decimal-leading-zero);position:absolute;top:0;left:0;width:48px;height:48px;border-radius:50%;background:var(--g);color:var(--ink);display:grid;place-items:center;font:700 20px var(--disp);z-index:1}
+.flow li::after{content:"";position:absolute;top:23px;left:48px;right:-18px;height:2px;background:linear-gradient(90deg,var(--g),var(--line))}
+.flow li:last-child::after{display:none}
+.flow b{display:block;font:600 22px var(--disp);text-transform:uppercase;margin-bottom:6px}
+.flow span{color:var(--mut);font-size:15px}
+@media(max-width:900px){.flow{grid-template-columns:1fr;gap:26px}.flow li{padding:0 0 0 70px;min-height:56px}.flow li::after{top:48px;left:23px;right:auto;width:2px;height:calc(100% + 26px - 48px)}}
+
+/* GALLERY */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:36px 0 24px}
+.gal{columns:4 210px;column-gap:14px}
+@media(max-width:600px){.gal{columns:2;column-gap:10px}.gal button{margin-bottom:10px}.nr b{font-size:26px}}
+.gal button{display:block;width:100%;padding:0;margin:0 0 14px;border:0;border-radius:12px;overflow:hidden;cursor:zoom-in;background:var(--card);break-inside:avoid;position:relative}
+.gal button.h{display:none}
+.gal img{width:100%;height:auto;transition:transform .5s,filter .3s}
+.gal button:hover img{transform:scale(1.05);filter:brightness(1.1)}
+.gal button::after{content:attr(data-c);position:absolute;left:10px;bottom:10px;font:600 12px var(--body);letter-spacing:.08em;text-transform:uppercase;background:rgba(7,19,31,.82);padding:6px 10px;border-radius:6px;opacity:0;transform:translateY(6px);transition:.25s}
+.gal button:hover::after{opacity:1;transform:none}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(4,12,20,.94);display:none;align-items:center;justify-content:center;padding:24px}
+.lb.on{display:flex}
+.lb img{max-height:86vh;max-width:92vw;border-radius:10px}
+.lb p{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:var(--mut);margin:0;font-size:15px}
+.lb button{position:absolute;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:1px solid #3b6288;background:var(--bg2);color:#fff;font-size:24px;cursor:pointer}
+
+/* FAQ */
+.faq{background:var(--bg2)}
+.faq .w{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,80px)}
+details{border-bottom:1px solid var(--line);padding:6px 0}
+summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font:600 22px/1.2 var(--disp);text-transform:uppercase;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:14px;font-size:34px;color:var(--g);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 22px;color:var(--mut);max-width:60ch}
+@media(max-width:860px){.faq .w{grid-template-columns:1fr}}
+
+/* CONTACT */
+.contact{background:linear-gradient(135deg,var(--bg3),var(--bg2));border-top:1px solid var(--line)}
+.contact .w{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px)}
+.cl{display:grid;gap:16px;margin-top:30px}
+.cl a,.cl div{display:flex;gap:16px;align-items:center;text-decoration:none;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:rgba(7,19,31,.5);transition:border-color .2s}
+.cl a:hover{border-color:var(--g)}
+.cl i{flex:none;width:44px;height:44px;border-radius:50%;background:var(--g);display:grid;place-items:center;font-style:normal;font-size:20px}
+.cl small{display:block;color:var(--mut);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.cl b{font-size:18px;word-break:break-word}
+form{background:var(--bg);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,4vw,40px);display:grid;gap:16px}
+label{display:grid;gap:6px;font:600 13px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+input,select,textarea{font:500 16px var(--body);padding:14px 16px;border-radius:10px;border:1px solid #2c5278;background:var(--card);color:var(--fg);width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--g)}
+textarea{min-height:110px;resize:vertical}
+form .note{font-size:13px;color:var(--mut);margin:0}
+@media(max-width:860px){.contact .w{grid-template-columns:1fr}}
+
+.who{background:var(--bg)}
+.wg{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:40px}
+.wg>div{padding:24px 24px 26px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.wg b{display:block;font:700 22px/1.3 var(--disp);text-transform:uppercase;letter-spacing:.03em;color:var(--g);margin-bottom:10px}
+.wg span{display:block;color:var(--mut);line-height:1.6;font-size:16px}
+
+.career .w{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);align-items:start}
+.career{background:var(--card)}
+.perks{display:grid;gap:12px;margin:28px 0 0;padding:0;list-style:none}
+.perks li{padding:14px 18px;border-left:3px solid var(--g);background:rgba(7,19,31,.45);border-radius:0 10px 10px 0;line-height:1.5}
+.career input[type=file]{padding:12px}
+.ok{display:none;padding:14px 16px;border-radius:10px;background:rgba(35,184,118,.15);border:1px solid var(--g);line-height:1.5}
+.ok.show{display:block}
+@media(max-width:860px){.career .w{grid-template-columns:1fr}}
+
+footer{background:#040d15;padding:48px 0 calc(48px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);color:var(--mut);font-size:14px}
+footer .w{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between;align-items:center}
+footer img{height:44px;width:auto}
+.wa{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));z-index:60;width:62px;height:62px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.5);transition:transform .2s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:34px;height:34px}
+.wa::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:pu 2.4s infinite}
+@keyframes pu{to{transform:scale(1.6);opacity:0}}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="w">
+    <a href="#topo" aria-label="Evolve Manutenção Industrial"><img class="logo" src="logo_white.png" alt="Evolve Manutenção Industrial" width="1200" height="330"></a>
+    <ul id="menu">
+      <li><a href="#atendemos">Quem atendemos</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#obra">Obras</a></li>
+      <li><a href="#seguranca">Segurança</a></li>
+      <li><a href="#processo">Como trabalhamos</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#duvidas">Dúvidas</a></li>
+      <li><a href="#carreira">Trabalhe conosco</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a class="btn d" href="#contato">Pedir orçamento</a>
+    <button class="burger" id="bg" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="hero" id="topo">
+  <div class="w">
+    <div>
+      <div class="eyebrow">Indústrias, hospitais e comércios · Sorocaba e região</div>
+      <h1>Onde a operação não pode falhar, <em>a Evolve entra.</em></h1>
+      <p>Equipe própria para manutenção mecânica, elétrica e civil, pintura, coberturas e reformas em indústrias, hospitais, supermercados, comércios e escritórios. Documentação de segurança em dia e prazo combinado antes de começar.</p>
+      <div class="btns">
+        <a class="btn" href="#contato">Pedir orçamento <span aria-hidden="true">→</span></a>
+        <a class="btn o" href="#obra">Ver obras executadas</a>
+      </div>
+      <div class="chips"><span>EPI completo</span><span>NR-01 · NR-06 · NR-18</span><span>Equipe dedicada</span><span>Medição mensal transparente</span></div>
+    </div>
+    <div class="stack" aria-hidden="true">
+      <figure class="a"><img src="munck-cesto.jpg" alt=""></figure>
+      <figure class="b"><img src="pil_evolve.jpg" alt=""></figure>
+      <div class="tag">Equipe Evolve em campo</div>
+    </div>
+  </div>
+  <div class="scroll" aria-hidden="true"></div>
+</header>
+
+<div class="mq" aria-hidden="true"><div>
+  <span>Segurança em primeiro lugar</span><span>Equipe própria</span><span>EPI completo</span><span>Prazo combinado</span><span>Documentação em dia</span><span>Medição transparente</span>
+  <span>Segurança em primeiro lugar</span><span>Equipe própria</span><span>EPI completo</span><span>Prazo combinado</span><span>Documentação em dia</span><span>Medição transparente</span>
+</div></div>
+
+<div class="nums"><div class="w">
+  <div class="rv"><b><i data-n="6">0</i></b><span>frentes de serviço numa só equipe</span></div>
+  <div class="rv"><b><i data-n="3">0</i></b><span>normas de segurança seguidas à risca (NR-01, NR-06, NR-18)</span></div>
+  <div class="rv"><b><i data-n="100">0</i><i>%</i></b><span>da equipe em campo com EPI completo</span></div>
+  <div class="rv"><b>1</b><span>contrato contínuo em planta industrial de grande porte</span></div>
+</div></div>
+
+<section class="who" id="atendemos">
+  <div class="w">
+    <div class="eyebrow rv">Quem atendemos</div>
+    <h2 class="rv">Do chão de fábrica<br>ao seu comércio</h2>
+    <p class="lead rv">A mesma equipe, o mesmo cuidado com segurança e prazo, seja numa planta industrial ou numa loja que não pode parar de vender.</p>
+    <div class="wg">
+      <div class="rv"><b>Indústrias</b><span>Manutenção mecânica, elétrica, civil e fabricação sob medida.</span></div>
+      <div class="rv"><b>Hospitais e clínicas</b><span>Reformas e manutenções com área isolada, obra limpa e horários combinados.</span></div>
+      <div class="rv"><b>Supermercados</b><span>Serviços planejados para não interromper o atendimento aos clientes.</span></div>
+      <div class="rv"><b>Comércio e lojas</b><span>Pintura, coberturas, reformas e serralheria para o seu ponto comercial.</span></div>
+      <div class="rv"><b>Farmácias e escritórios</b><span>Adequações, acabamentos e manutenção predial com prazo combinado.</span></div>
+      <div class="rv"><b>Condomínios</b><span>Iluminação, estruturas, pintura e manutenção de áreas comuns.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="w">
+    <div class="eyebrow rv">O que fazemos</div>
+    <h2 class="rv">Seis frentes,<br>uma só equipe</h2>
+    <p class="lead rv">Você fala com um único responsável e recebe mecânica, elétrica, civil e acabamento coordenados, sem trocar de fornecedor a cada etapa.</p>
+
+    <div class="tabs" role="tablist" aria-label="Serviços">
+      <button class="tab" role="tab" aria-selected="true" data-p="p1">Mecânica</button>
+      <button class="tab" role="tab" aria-selected="false" data-p="p2">Elétrica</button>
+      <button class="tab" role="tab" aria-selected="false" data-p="p3">Civil</button>
+      <button class="tab" role="tab" aria-selected="false" data-p="p4">Caldeiraria e tubulação</button>
+      <button class="tab" role="tab" aria-selected="false" data-p="p5">Fabricação</button>
+      <button class="tab" role="tab" aria-selected="false" data-p="p6">Pintura e reformas</button>
+    </div>
+
+    <div class="pane on" id="p1">
+      <div class="ph"><img src="c_macarico.jpg" alt="Profissional da Evolve com máscara de solda e EPI realizando corte" loading="lazy"></div>
+      <div class="tx"><h3>Manutenção mecânica</h3><p>Equipamentos industriais funcionando como devem, com serviço limpo, medido e documentado.</p>
+        <ul><li>Alinhamento e nivelamento de equipamentos e estruturas</li><li>Montagem e desmontagem de conjuntos mecânicos</li><li>Corte, solda e reparos em campo</li><li>Ajustes e correções com acompanhamento técnico</li></ul></div>
+    </div>
+    <div class="pane" id="p2">
+      <div class="ph"><img src="poste-2.jpg" alt="Eletricista da Evolve com EPI completo ligando sensor em poste" loading="lazy"></div>
+      <div class="tx"><h3>Manutenção elétrica</h3><p>Instalações seguras, testadas e entregues com conferência elétrica.</p>
+        <ul><li>Iluminação externa, postes e luminárias</li><li>Quadros de comando, contatores e disjuntores</li><li>Sensores de presença e automação simples</li><li>Energia solar para iluminação externa</li><li>Cabeamento, eletrodutos e eletrocalhas</li></ul></div>
+    </div>
+    <div class="pane" id="p3">
+      <div class="ph"><img src="pil_evolve.jpg" alt="Equipe da Evolve em recuperação de pilar de concreto com andaime" loading="lazy"></div>
+      <div class="tx"><h3>Obras civis</h3><p>Da escavação ao acabamento, com isolamento e sinalização da área de trabalho.</p>
+        <ul><li>Recuperação estrutural de pilares de concreto</li><li>Escavações, valas e caixas de passagem</li><li>Formas, escoramento e recomposição de concreto</li><li>Pisos e acabamentos</li></ul></div>
+    </div>
+    <div class="pane" id="p4">
+      <div class="ph"><img src="bar1.jpg" alt="Profissional com EPI completo trabalhando em estrutura metálica" loading="lazy"></div>
+      <div class="tx"><h3>Caldeiraria e tubulação</h3><p>Estruturas e linhas montadas com solda qualificada e conferência dimensional.</p>
+        <ul><li>Caldeiraria pesada e soldagem</li><li>Tubulação de vapor, gás e incêndio</li><li>Estruturas metálicas e suportes</li><li>Montagem industrial</li></ul></div>
+    </div>
+    <div class="pane" id="p5">
+      <div class="ph"><img src="f_solda.jpg" alt="Soldador da Evolve fabricando estrutura em bancada" loading="lazy"></div>
+      <div class="tx"><h3>Fabricação e serralheria</h3><p>Peças sob medida, produzidas em oficina e instaladas pela mesma equipe.</p>
+        <ul><li>Grades, gradis e portões metálicos</li><li>Eletrocalhas e suportes</li><li>Chapas cortadas e conformadas</li><li>Acabamento e pintura de proteção</li></ul></div>
+    </div>
+    <div class="pane" id="p6">
+      <div class="ph"><img src="pi_gradil.jpg" alt="Gradil metálico pintado em amarelo de segurança" loading="lazy"></div>
+      <div class="tx"><h3>Pintura, coberturas e reformas</h3><p>Para indústrias, hospitais, supermercados, farmácias, lojas e escritórios, com obra organizada e prazo combinado.</p>
+        <ul><li>Pintura industrial e predial</li><li>Coberturas e telhados</li><li>Reformas comerciais com prazo combinado</li><li>Obra limpa e organizada para o seu negócio continuar funcionando</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="case" id="obra">
+  <div class="w">
+    <div class="hd">
+      <div><div class="eyebrow rv">Projeto executado</div>
+      <h2 class="rv">Iluminação externa<br>com energia solar</h2>
+      <p class="lead rv">Da vala ao poste aceso: infraestrutura, içamento, quadro de comando, sensor de presença e painéis solares, tudo feito pela mesma equipe.</p></div>
+    </div>
+  </div>
+  <div class="rail" tabindex="0" aria-label="Etapas da obra">
+    <article class="step"><div class="im"><img src="escavacao.jpg" alt="Escavação para infraestrutura" loading="lazy"></div><div class="t"><i>01</i><b>Escavação</b><span>Valas abertas com área isolada e sinalizada.</span></div></article>
+    <article class="step"><div class="im"><img src="caixa.jpg" alt="Caixa de passagem e eletrodutos" loading="lazy"></div><div class="t"><i>02</i><b>Infraestrutura</b><span>Caixas de passagem e eletrodutos enterrados.</span></div></article>
+    <article class="step"><div class="im"><img src="munck-cesto.jpg" alt="Poste içado com caminhão munck" loading="lazy"></div><div class="t"><i>03</i><b>Içamento</b><span>Poste montado com munck e cesto aéreo.</span></div></article>
+    <article class="step"><div class="im"><img src="quadro.jpg" alt="Quadro de comando no poste" loading="lazy"></div><div class="t"><i>04</i><b>Quadro de comando</b><span>Contatores e disjuntores instalados e ligados.</span></div></article>
+    <article class="step"><div class="im"><img src="sensor.jpg" alt="Sensor de presença instalado" loading="lazy"></div><div class="t"><i>05</i><b>Sensor de presença</b><span>Ligação elétrica e teste de funcionamento.</span></div></article>
+    <article class="step"><div class="im"><img src="lumok.jpg" alt="Poste de iluminação concluído" loading="lazy"></div><div class="t"><i>06</i><b>Luminária no alto</b><span>Poste aprumado e iluminação instalada.</span></div></article>
+    <article class="step"><div class="im"><img src="placas.jpg" alt="Painéis solares sobre estrutura metálica" loading="lazy" style="object-position:center"></div><div class="t"><i>07</i><b>Energia solar</b><span>Painéis em estrutura metálica alimentando a iluminação.</span></div></article>
+  </div>
+</section>
+
+<section class="safe" id="seguranca">
+  <div class="w">
+    <div>
+      <div class="eyebrow rv">Segurança</div>
+      <h2 class="rv">Segurança acima<br>de qualquer meta</h2>
+      <p class="lead rv">Nenhum prazo vale um acidente. Por isso a obra só começa com a documentação em dia e a equipe com o equipamento certo.</p>
+      <div class="nrs rv">
+        <div class="nr"><b>NR-01</b><span>Gerenciamento de riscos ocupacionais</span></div>
+        <div class="nr"><b>NR-06</b><span>Equipamentos de proteção individual</span></div>
+        <div class="nr"><b>NR-18</b><span>Segurança na construção civil</span></div>
+      </div>
+      <ul class="rv"><li>EPI completo para toda a equipe, sempre</li><li>Área isolada e sinalizada antes de qualquer serviço</li><li>Treinamentos e documentação organizados por colaborador</li><li>Medição mensal clara, sem surpresa na cobrança</li></ul>
+    </div>
+    <div class="ph rv"><img src="poste-3.jpg" alt="Eletricista da Evolve com capacete, protetor auricular e uniforme de alta visibilidade" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="proc" id="processo">
+  <div class="w">
+    <div class="eyebrow rv">Como trabalhamos</div>
+    <h2 class="rv">Do primeiro contato<br>à medição</h2>
+    <ol class="flow" style="padding:0">
+      <li class="rv"><b>Contato</b><span>Você conta o que precisa. Respondemos rápido, pelo WhatsApp ou e-mail.</span></li>
+      <li class="rv"><b>Visita técnica</b><span>Avaliamos o local e os riscos antes de falar em valor.</span></li>
+      <li class="rv"><b>Proposta</b><span>Escopo, prazo e preço por escrito, sem letra miúda.</span></li>
+      <li class="rv"><b>Execução</b><span>Equipe com EPI, área isolada e acompanhamento do início ao fim.</span></li>
+      <li class="rv"><b>Medição</b><span>Entrega conferida e medição transparente, no combinado.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="w">
+    <div class="eyebrow rv">Galeria</div>
+    <h2 class="rv">Obras e serviços<br>executados</h2>
+    <div class="filters" role="group" aria-label="Filtrar fotos">
+      <button class="tab" aria-pressed="true" data-f="all" aria-selected="true">Tudo</button>
+      <button class="tab" data-f="Elétrica" aria-selected="false">Elétrica</button>
+      <button class="tab" data-f="Civil" aria-selected="false">Civil</button>
+      <button class="tab" data-f="Mecânica e fabricação" aria-selected="false">Mecânica e fabricação</button>
+    </div>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada"><button id="lbx" aria-label="Fechar">×</button><img id="lbi" alt=""><p id="lbp"></p></div>
+
+<section class="faq" id="duvidas">
+  <div class="w">
+    <div><div class="eyebrow rv">Dúvidas</div><h2 class="rv">Perguntas<br>frequentes</h2><p class="lead rv">Não achou o que procurava? Chame no WhatsApp.</p></div>
+    <div class="rv">
+      <details><summary>Quais serviços a Evolve faz?</summary><p>Manutenção mecânica, elétrica e civil, caldeiraria e tubulação, fabricação e serralheria, pintura, coberturas e reformas comerciais.</p></details>
+      <details><summary>Atendem hospitais, comércios e supermercados?</summary><p>Sim. Além de plantas industriais, atendemos obras e manutenções em hospitais, clínicas, supermercados, farmácias, lojas, condomínios e escritórios, combinando horários e isolamento da área para o seu negócio continuar funcionando.</p></details>
+      <details><summary>Onde vocês atuam?</summary><p>Estamos em Sorocaba, SP, e atendemos a região. Fale com a gente para confirmar a sua cidade.</p></details>
+      <details><summary>A equipe trabalha com EPI e documentação?</summary><p>Sim. Toda a equipe vai a campo com EPI completo e documentação em dia, seguindo as NR-01, NR-06 e NR-18.</p></details>
+      <details><summary>Como funciona o orçamento?</summary><p>Fazemos uma visita técnica, entendemos o escopo e enviamos a proposta por escrito, com prazo e valor combinados antes de começar.</p></details>
+      <details><summary>Vocês podem manter uma equipe dedicada?</summary><p>Podemos. Já mantemos contrato contínuo com equipe dedicada em planta industrial de grande porte, com medição mensal transparente.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="career" id="carreira">
+  <div class="w">
+    <div>
+      <div class="eyebrow rv">Trabalhe conosco</div>
+      <h2 class="rv">Venha crescer<br>com a Evolve</h2>
+      <p class="lead rv">Estamos sempre conhecendo profissionais de manutenção mecânica, elétrica, civil, solda, pintura e serralheria. Envie seu currículo e entraremos em contato quando surgir uma vaga com o seu perfil.</p>
+      <ul class="perks rv">
+        <li>Equipe dedicada e trabalho organizado</li>
+        <li>EPI completo e segurança em primeiro lugar</li>
+        <li>Obras e serviços em Sorocaba e região</li>
+      </ul>
+    </div>
+    <form id="cv" class="rv">
+      <label>Nome completo<input name="Nome" required autocomplete="name"></label>
+      <label>Telefone / WhatsApp<input name="Telefone" required type="tel" autocomplete="tel"></label>
+      <label>Cidade<input name="Cidade" autocomplete="address-level2"></label>
+      <label>Área de atuação
+        <select name="Area"><option>Mecânica</option><option>Elétrica</option><option>Civil / pedreiro</option><option>Soldador</option><option>Caldeiraria / tubulação</option><option>Serralheiro</option><option>Pintor</option><option>Ajudante / auxiliar</option><option>Administrativo</option><option>Outra</option></select>
+      </label>
+      <label>Currículo (PDF ou foto)<input name="attachment" type="file" accept=".pdf,.doc,.docx,image/*"></label>
+      <label>Fale um pouco sobre você<textarea name="Mensagem" placeholder="Experiência, cursos e NRs que você tem"></textarea></label>
+      <button class="btn" type="submit">Enviar currículo <span aria-hidden="true">→</span></button>
+      <p class="ok" id="cvok" role="status"></p>
+      <p class="note">Seus dados são usados apenas para o processo seletivo da Evolve.</p>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contato">
+  <div class="w">
+    <div>
+      <div class="eyebrow rv">Orçamento</div>
+      <h2 class="rv">Vamos conversar<br>sobre a sua obra</h2>
+      <p class="lead rv">Conte o que precisa. Respondemos pelo WhatsApp ou por e-mail.</p>
+      <div class="cl rv">
+        <a href="https://wa.me/5515997706955" target="_blank" rel="noopener"><i aria-hidden="true">✆</i><span><small>WhatsApp e telefone</small><b>(15) 99770-6955</b></span></a>
+        <a href="mailto:comercial@evolveservicos.com.br"><i aria-hidden="true">✉</i><span><small>E-mail</small><b>comercial@evolveservicos.com.br</b></span></a>
+        <a href="https://www.linkedin.com/in/evolve-manutencao-industrial/" target="_blank" rel="noopener"><i aria-hidden="true">in</i><span><small>LinkedIn</small><b>Evolve Manutenção Industrial</b></span></a>
+        <div><i aria-hidden="true">⌖</i><span><small>Onde estamos</small><b>Sorocaba / SP</b></span></div>
+      </div>
+    </div>
+    <form id="f" class="rv">
+      <label>Seu nome<input name="n" required autocomplete="name"></label>
+      <label>Empresa<input name="e" autocomplete="organization"></label>
+      <label>Serviço
+        <select name="s"><option>Manutenção mecânica</option><option>Manutenção elétrica</option><option>Obras civis</option><option>Caldeiraria e tubulação</option><option>Fabricação e serralheria</option><option>Pintura, coberturas e reformas</option><option>Outro</option></select>
+      </label>
+      <label>Conte o que precisa<textarea name="m" placeholder="Local, prazo e o que precisa ser feito"></textarea></label>
+      <button class="btn" type="submit">Enviar pelo WhatsApp <span aria-hidden="true">→</span></button>
+      <p class="note">Ao enviar, abrimos o WhatsApp com a sua mensagem pronta.</p>
+    </form>
+  </div>
+</section>
+
+<footer><div class="w">
+  <img src="logo_white.png" alt="Evolve Manutenção Industrial" width="1200" height="330">
+  <a href="https://www.linkedin.com/in/evolve-manutencao-industrial/" target="_blank" rel="noopener" style="color:var(--g);font-weight:700;text-decoration:none">LinkedIn</a>
+  <span>© <span id="y"></span> Evolve Manutenção Industrial Ltda. · CNPJ 57.951.208/0001-03 · Sorocaba/SP</span>
+</div></footer>
+
+<a class="wa" href="https://wa.me/5515997706955?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Evolve%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M5 5h22a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H15l-7 6v-6H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm5 6v2h12v-2H10zm0 5v2h8v-2h-8z"/></svg>
+</a>
+
+<script>
+(function(){
+  var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  // nav
+  var nav=$('#nav');function sc(){nav.classList.toggle('s',scrollY>40)}sc();addEventListener('scroll',sc,{passive:true});
+  var bg=$('#bg'),menu=$('#menu');
+  bg.addEventListener('click',function(){var o=menu.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
+  $$('#menu a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');bg.setAttribute('aria-expanded','false')})});
+  $('#y').textContent=new Date().getFullYear();
+  // reveal + counters
+  var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);$$('[data-n]',e.target).forEach(count)}})},{threshold:.15}):null;
+  $$('.rv').forEach(function(el){io?io.observe(el):el.classList.add('in')});
+  function count(el){var n=+el.dataset.n,t=0,d=1200,s=performance.now();(function f(now){t=Math.min(1,(now-s)/d);el.textContent=Math.round(n*(1-Math.pow(1-t,3)));if(t<1)requestAnimationFrame(f)})(s)}
+  // service tabs
+  var tabs=$$('.tab[data-p]');
+  tabs.forEach(function(t){t.addEventListener('click',function(){tabs.forEach(function(x){x.setAttribute('aria-selected',x===t)});$$('.pane').forEach(function(p){p.classList.toggle('on',p.id===t.dataset.p)})})});
+  // gallery
+  var G=[['munck-cesto','Elétrica','Poste içado com caminhão munck e cesto aéreo'],['poste-2','Elétrica','Ligação do sensor de presença no poste'],['pil_evolve','Civil','Equipe Evolve na recuperação de pilar'],['c_macarico','Mecânica e fabricação','Corte com maçarico'],['quadro','Elétrica','Quadro de comando no poste'],['f_solda','Mecânica e fabricação','Soldagem em bancada na oficina'],['pil_obra','Civil','Trabalho em pilar com andaime e iluminação própria'],['sensor','Elétrica','Sensor de presença instalado'],['solda-1','Mecânica e fabricação','Fabricação de estruturas metálicas'],['escavacao','Civil','Escavação para infraestrutura, com área isolada'],['lumok','Elétrica','Poste de iluminação com luminária instalada'],['f_grade','Mecânica e fabricação','Grades metálicas fabricadas'],['poste-3','Elétrica','Conferência elétrica após a instalação'],['pil_arm','Civil','Pilar com armadura exposta e escoramento'],['eletrocalhas-1','Mecânica e fabricação','Eletrocalhas galvanizadas'],['placas','Elétrica','Painéis solares em estrutura metálica'],['pil_conc','Civil','Pilar de concreto em recuperação'],['solda-4','Mecânica e fabricação','Serralheria e montagem de estruturas'],['caixa','Civil','Caixa de passagem e eletrodutos'],['bar2','Mecânica e fabricação','Profissional com EPI completo em serviço'],['cabos-1','Elétrica','Organização de cabeamento'],['chapas-2','Mecânica e fabricação','Chapas de aço assentadas'],['poste-pronto','Elétrica','Poste metálico montado e aprumado'],['pta','Elétrica','Plataforma elevatória (PTA) em operação']];
+  var gal=$('#gal');
+  G.forEach(function(g,i){var b=document.createElement('button');b.type='button';b.dataset.c=g[1];b.dataset.i=i;b.setAttribute('aria-label','Ampliar: '+g[2]);b.innerHTML='<img loading="lazy" src="'+g[0]+'.jpg" alt="'+g[2]+'">';gal.appendChild(b)});
+  var fs=$$('.tab[data-f]');
+  fs.forEach(function(f){f.addEventListener('click',function(){fs.forEach(function(x){x.setAttribute('aria-selected',x===f)});$$('#gal button').forEach(function(b){b.classList.toggle('h',f.dataset.f!=='all'&&b.dataset.c!==f.dataset.f)})})});
+  var lb=$('#lb'),lbi=$('#lbi'),lbp=$('#lbp');
+  gal.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var g=G[b.dataset.i];lbi.src=''+g[0]+'.jpg';lbi.alt=g[2];lbp.textContent=g[2];lb.classList.add('on');$('#lbx').focus()});
+  function cl(){lb.classList.remove('on')}
+  lb.addEventListener('click',function(e){if(e.target!==lbi)cl()});addEventListener('keydown',function(e){if(e.key==='Escape')cl()});
+  // form -> whatsapp
+
+  // currículo: chega por e-mail em comercial@evolveservicos.com.br
+  $('#cv').addEventListener('submit',function(e){e.preventDefault();var f=e.target,b=f.querySelector('button'),ok=$('#cvok');
+    var d=new FormData(f);d.append('_subject','Currículo recebido pelo site - '+f.Nome.value);d.append('_template','table');d.append('_captcha','false');
+    b.disabled=true;ok.className='ok show';ok.textContent='Enviando...';
+    fetch('https://formsubmit.co/ajax/comercial@evolveservicos.com.br',{method:'POST',body:d,headers:{'Accept':'application/json'}})
+    .then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(){ok.textContent='Currículo enviado! Obrigado, entraremos em contato se houver uma vaga com o seu perfil.';f.reset();b.disabled=false})
+    .catch(function(){ok.innerHTML='Não conseguimos enviar agora. Mande seu currículo por WhatsApp (15) 99770-6955 ou pelo e-mail comercial@evolveservicos.com.br.';b.disabled=false});
+  });
+  $('#f').addEventListener('submit',function(e){e.preventDefault();var d=new FormData(e.target);
+    var t='Olá, sou '+d.get('n')+(d.get('e')?' da empresa '+d.get('e'):'')+'. Gostaria de um orçamento de: '+d.get('s')+'.'+(d.get('m')?'\n\n'+d.get('m'):'')+'\n\n(Mensagem enviada pelo site da Evolve)';
+    try{var c=new FormData(e.target);c.append('_subject','Pedido de orçamento pelo site - '+d.get('n'));c.append('_template','table');c.append('_captcha','false');fetch('https://formsubmit.co/ajax/comercial@evolveservicos.com.br',{method:'POST',body:c,headers:{'Accept':'application/json'}}).catch(function(){})}catch(x){}
+    window.open('https://wa.me/5515997706955?text='+encodeURIComponent(t),'_blank','noopener')});
+})();
+</script>
+</body>
+</html>

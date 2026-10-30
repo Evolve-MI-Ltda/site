@@ -519,7 +519,7 @@ footer img{height:44px;width:auto}
     b.disabled=true;ok.className='ok show';ok.textContent='Enviando...';
     fetch('https://formsubmit.co/ajax/comercial@evolveservicos.com.br',{method:'POST',body:d,headers:{'Accept':'application/json'}})
     .then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(){ok.textContent='Currículo enviado! Obrigado, entraremos em contato se houver uma vaga com o seu perfil.';f.reset();b.disabled=false})
-    .catch(function(){ok.innerHTML='Não conseguimos enviar agora. Mande seu currículo por WhatsApp (15) 99770-6955 ou pelo e-mail comercial@evolveservicos.com.br.';b.disabled=false});
+    .catch(function(){var t='Olá, sou '+f.Nome.value+' ('+f.Telefone.value+(f.Cidade.value?', '+f.Cidade.value:'')+'). Área: '+f.Area.value+'. Gostaria de enviar meu currículo para a Evolve.'+(f.Mensagem.value?'\n\n'+f.Mensagem.value:'');ok.innerHTML='Não conseguimos enviar direto agora. <a href="https://wa.me/5515997706955?text='+encodeURIComponent(t)+'" target="_blank" rel="noopener" style="color:var(--g);font-weight:700">Toque aqui para enviar pelo WhatsApp</a> e anexe seu currículo na conversa, ou escreva para comercial@evolveservicos.com.br.';b.disabled=false});
   });
   $('#f').addEventListener('submit',function(e){e.preventDefault();var d=new FormData(e.target);
     var t='Olá, sou '+d.get('n')+(d.get('e')?' da empresa '+d.get('e'):'')+'. Gostaria de um orçamento de: '+d.get('s')+'.'+(d.get('m')?'\n\n'+d.get('m'):'')+'\n\n(Mensagem enviada pelo site da Evolve)';

@@ -45,17 +45,19 @@ section{padding-block:clamp(64px,9vw,120px);position:relative}
 /* NAV */
 nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,backdrop-filter .3s,border-color .3s;border-bottom:1px solid transparent;padding-top:env(safe-area-inset-top,0px)}
 nav.s{background:rgba(7,19,31,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
-nav .w{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px;max-width:1560px}
 nav img.logo{height:40px;width:auto}
-nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
 nav ul a{white-space:nowrap;text-decoration:none;font:600 13px var(--body);letter-spacing:.05em;text-transform:uppercase;color:var(--mut);transition:color .2s}
 nav ul a:hover{color:var(--g)}
 nav .btn{padding:11px 20px;font-size:14px;white-space:nowrap;flex:none}
 .burger{display:none;background:none;border:0;color:var(--fg);width:44px;height:44px;cursor:pointer}
 .burger span{display:block;width:26px;height:3px;background:currentColor;margin:5px auto;transition:.25s}
+nav ul li:last-child{display:none}
 @media(max-width:1500px){
   nav ul{position:fixed;inset:74px 0 auto 0;background:rgba(7,19,31,.98);flex-direction:column;gap:0;padding:12px 20px 24px;transform:translateY(-120%);transition:transform .3s;border-bottom:1px solid var(--line)}
   nav ul.open{transform:none}
+  nav ul li:last-child{display:block}
   nav ul a{display:block;padding:16px 0;font-size:16px;border-bottom:1px solid var(--line)}
   nav .btn.d{display:none}
   .burger{display:block}
